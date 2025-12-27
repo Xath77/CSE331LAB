@@ -85,11 +85,11 @@ int main(void)
 
   Reset_Game();
 
-  SSD1306_GotoXY(0, 5);
+  SSD1306_GotoXY(3, 5);
   SSD1306_Puts("TIC-TAC-TOE", &Font_11x18, 1);
-  SSD1306_GotoXY(20, 30);
+  SSD1306_GotoXY(25, 30);
   SSD1306_Puts("Blue vs Red", &Font_7x10, 1);
-  SSD1306_GotoXY(10, 50);
+  SSD1306_GotoXY(8, 50);
   SSD1306_Puts("Press 0 to Reset", &Font_7x10, 1);
   SSD1306_UpdateScreen();
 
