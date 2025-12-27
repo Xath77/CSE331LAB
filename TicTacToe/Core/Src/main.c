@@ -85,12 +85,12 @@ int main(void)
 
   Reset_Game();
 
-  SSD1306_GotoXY(10, 5);
+  SSD1306_GotoXY(0, 5);
   SSD1306_Puts("TIC-TAC-TOE", &Font_11x18, 1);
   SSD1306_GotoXY(20, 30);
   SSD1306_Puts("Blue vs Red", &Font_7x10, 1);
   SSD1306_GotoXY(10, 50);
-  SSD1306_Puts("Press 0: Reset", &Font_7x10, 1);
+  SSD1306_Puts("Press 0 to Reset", &Font_7x10, 1);
   SSD1306_UpdateScreen();
 
   HAL_Delay(3000);  // Show message for 3 seconds
@@ -402,7 +402,7 @@ void Display_Winner(Player_t winner)
   SSD1306_Puts("WINS!", &Font_11x18, 1);
 
   SSD1306_GotoXY(10, 55);
-  SSD1306_Puts("Press 0:  Reset", &Font_7x10, 1);
+  SSD1306_Puts("Press 0 to Reset", &Font_7x10, 1);
 
   SSD1306_UpdateScreen();
 }
@@ -414,7 +414,7 @@ void Display_Draw(void)
   SSD1306_Puts("DRAW!", &Font_16x26, 1);
 
   SSD1306_GotoXY(10, 50);
-  SSD1306_Puts("Press 0: Reset", &Font_7x10, 1);
+  SSD1306_Puts("Press 0 to Reset", &Font_7x10, 1);
 
   SSD1306_UpdateScreen();
 }
